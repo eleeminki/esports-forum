@@ -1,0 +1,626 @@
+body {
+  font-family: "Helvetica", "sans-serif";
+  margin: 0;
+}
+
+/* start: global style rules */
+
+h1,
+h2,
+h3,
+h4 h5 {
+  line-height: 1.5;
+  font-weight: 300;
+  margin: 0.5em 0;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+label,
+strong {
+  line-height: 2;
+  font-size: 0.85em;
+  font-weight: 300;
+}
+
+.flex {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+
+.badges {
+  padding: 9px 20px;
+  color: #eee;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.75em;
+}
+
+.badge-new {
+  background-color: #ff205f;
+}
+
+.badge-strategy {
+  background-color: #4eae60;
+}
+
+.badge-role {
+  background-color: #694eae;
+}
+
+.badge-race,
+.badge-racing {
+  background-color: rgb(219, 152, 8);
+}
+
+.badge-adventure {
+  background-color: rgb(7, 177, 98);
+}
+
+.badge-tournament {
+  background-color: rgb(212, 166, 14);
+}
+
+.badge-premium {
+  background-color: #2b3f97;
+  color: #252525;
+}
+
+img {
+  max-width: 400px;
+  height: 250px;
+  width: 300px;
+}
+
+.shade {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* End Global Style Rules */
+
+/*Start Header styles */
+
+header {
+  background-color: #131311;
+  padding: 20px 0;
+  position: relative;
+  border-bottom: 1px solid #ffb320;
+  z-index: 2;
+}
+
+#logo-image {
+  max-width: 25px;
+  height: auto;
+}
+
+.hamburger-menu {
+  background-color: transparent;
+  border: 1px solid #ffb320;
+  padding: 3px 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger-menu .strip {
+  display: block;
+  height: 1px;
+  background-color: #ffb320;
+  margin: 4px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 1em;
+  margin: 0 18px;
+}
+
+nav ul li a {
+  color: #eee;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: #ffb320;
+}
+
+#login-register-button {
+  background-color: #ffb320;
+  color: #131311;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+/*End Header Styles */
+
+/*start: bg section styles */
+#league-bg {
+  background: url("../images/league01.jpg") top center no-repeat;
+  background-size: cover;
+  padding: 200px 0 623px;
+}
+
+.bgText {
+  max-width: 1200px;
+  margin: -30px auto 0;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+  z-index: 2;
+}
+
+.bgText h1 {
+  color: #eee;
+  font-size: 3em;
+  font-weight: 300;
+  margin: 0.5em 0;
+}
+
+.bgText span {
+  color: #ffb320;
+}
+
+.bgText h5 {
+  color: #eee;
+  font-size: 0.85em;
+  font-weight: 300;
+  max-width: 500px;
+  line-height: 2;
+  margin-bottom: 2.5em;
+}
+
+.bgText button {
+  background-color: #ffb320;
+  color: #131311;
+  border-radius: 25px;
+  padding: 15px 25px;
+  font-size: 0.85em;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+/* end : bg section styles */
+
+/* start: latest news style */
+
+#latest-news {
+  margin-bottom: 75px;
+}
+
+#latest-news .flex {
+  justify-content: flex-start;
+  max-width: 100%;
+  padding: 0;
+}
+
+#latest-news .flex h5 {
+  background-color: #ffb320;
+  margin: 0;
+  padding: 25px;
+  flex-basis: 25%;
+  text-align: right;
+  color: #eee;
+  font-size: 1.2em;
+}
+
+#latest-news-container {
+  background-color: #131311;
+  position: relative;
+  flex-basis: 75%;
+  padding: 25px;
+}
+
+#latest-news-container .badge-new {
+  margin-right: 25px;
+}
+
+#latest-news-container .latest-news-text {
+  color: #eee;
+}
+
+/* end: latest news style */
+
+/* start: game box style */
+
+#game-boxes {
+  margin-bottom: 75px;
+}
+
+#game-boxes .boxes {
+  flex-basis: 25%;
+  position: relative;
+  height: 300px;
+}
+
+#game-boxes .box-new {
+  background: url("../images/game01.jpg") top center no-repeat;
+  background-size: cover;
+}
+
+#game-boxes .box-strategy {
+  background: url("../images/game02.jpg") top center no-repeat;
+  background-size: cover;
+}
+
+#game-boxes .box-role {
+  background: url("../images/game03.jpg") top center no-repeat;
+  background-size: cover;
+}
+
+#game-boxes .box-race {
+  background: url("../images/game01.jpg") top center no-repeat;
+  background-size: cover;
+}
+
+#game-boxes .badges {
+  position: relative;
+  z-index: 2;
+  top: 20px;
+  left: 20px;
+}
+
+#game-boxes .contents {
+  position: absolute;
+  z-index: 2;
+  top: 40px;
+  bottom: 20px;
+  left: 0;
+  color: #eee;
+  padding: 0 35px 0 25px;
+}
+
+#game-boxes .contents a {
+  color: #999;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+/* end: game box style */
+
+/* start recent games style */
+
+#recent-games {
+  background: url("../images/gamechar.png") left center no-repeat;
+  background-size: cover;
+  background-color: #eef2f6;
+  border-top: 1px solid #d6dee7;
+  border-bottom: 1p solid #d6dee7;
+  padding: 70px 0 120px;
+}
+
+#recent-games h1 {
+  text-align: center;
+}
+
+#recent-games .postBox {
+  position: relative;
+  flex-basis: 31%;
+  background-color: #fff;
+  margin: 0;
+}
+
+#recent-games .postBox .badges {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+#recent-games img {
+  width: 100%;
+  top: -32px;
+  position: relative;
+}
+
+#recent-games .postBox .boxText {
+  padding: 20px;
+}
+
+#recent-games .postBox .boxText p {
+  color: #999;
+}
+
+#recent-games .postBox .boxText a {
+  color: #999;
+  font-size: 0.8em;
+}
+/* end recent games style */
+
+/* start tournament styles */
+#tournament {
+  background: url("../images/bgtexture.jpg") 0 0 repeat;
+  background-size: cover;
+  padding: 125px 0 105px;
+}
+
+#tournament .flex {
+  position: relative;
+}
+
+#tournament .badges {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  color: #eee;
+}
+
+#tournament .badge-tournament {
+  top: -32px;
+  left: 15px;
+}
+
+#tournament .postBox {
+  background-color: #252525;
+  padding: 70px 20px 40px;
+  flex-basis: 45%;
+  position: relative;
+}
+
+#tournament .postBox .tournament-image {
+  float: left;
+  width: 30%;
+}
+
+#tournament .postBox .tournament-image img {
+  width: 100%;
+  height: 100%;
+}
+
+#tournament .postBox .tournamentText {
+  float: left;
+  margin-left: 25px;
+  width: 60%;
+}
+
+#tournament .postBox .tournamentText h4 {
+  color: #ffb320;
+  margin-top: 0;
+}
+
+#tournament .postBox .tournamentText label {
+  color: #999;
+  margin-top: 0;
+  font-size: 0.75em;
+}
+
+#tournament .postBox .tournamentText .prize {
+  color: #ffb320;
+  display: inline-block;
+  margin-top: 12px;
+}
+
+#tournament .postBox .tournamentText strong {
+  color: #eee;
+  font-size: 0.75em;
+}
+
+#tournament .postBox .tournamentText p {
+  color: #eee;
+  font-size: 0.75em;
+}
+/* end tournament styles */
+
+/* recent reveiws section */
+
+#recent-reviews {
+  background: url("../images/bgimg.png") top right no-repeat;
+  background-size: cover;
+  padding: 75px 0 50px;
+}
+
+#recent-reviews h1 {
+  text-align: center;
+  margin-bottom: 1.65em;
+}
+
+#recent-reviews .box {
+  flex-basis: 23%;
+  position: relative;
+  text-align: center;
+  background-color: #505e9c;
+}
+
+#recent-reviews .box .score-rating {
+  border-radius: 28px;
+  padding: 13px;
+  font-size: 1.1 em;
+  color: #eee;
+  font-weight: 600;
+  background-color: #ff28ae;
+  position: absolute;
+  top: -30px;
+  left: 30px;
+}
+
+#recent-reviews .box .recent-reviews-image {
+  margin-bottom: 0.75em;
+  overflow: hidden;
+}
+
+#recent-reviews .box .recent-reviews-image img {
+  width: 100%;
+}
+
+#recent-reviews .box p {
+  color: #eee;
+}
+
+/* end recent reviews section */
+
+/* post comments section */
+#post-comments {
+  background: url("../images/bgtexture.jpg") 0 0 repeat;
+  background-size: cover;
+  padding: 75px 0;
+}
+
+#posts-comments .game-warrior {
+  flex-basis: 32%;
+  position: relative;
+}
+
+#post-comments .post-comment {
+  flex-basis: 28%;
+}
+
+#post-comments .game-warrior p {
+  color: #eee;
+  font-weight: 600;
+}
+
+#post-comments .game-warrior img {
+  margin-bottom: 0.5em;
+}
+
+#post-comments .game-warrior .footer-graphic {
+  margin-bottom: 0;
+  position: absolute;
+  width: 115%;
+}
+
+#post-comments .post-comment {
+  background-color: #252525;
+  flex-basis: 50%;
+  padding: 20px 20px 25px;
+  border: 1px solid #4a4a4a;
+  margin-right: 20px;
+}
+
+#post-comments .post-comment h3 {
+  color: #eee;
+}
+
+#post-comments .post-items {
+  margin-top: 25px;
+}
+
+#post-comments .post-items:first-child {
+  margin-top: 0;
+}
+
+#post-comments .post-items:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#post-comments .post-items img {
+  float: left;
+  width: 30%;
+  height: auto;
+}
+
+#post-comments .post-items > div {
+  float: left;
+  margin-left: 5%;
+  width: 45%;
+}
+
+#post-comments .post-items > div h5 {
+  color: #ffb320;
+  font-size: 0.8em;
+  margin-top: 0;
+}
+
+#post-comments .post-items > div p {
+  color: #eee;
+  font-size: 0.8em;
+  margin: 5px 0;
+}
+
+#post-comments .post-items > div small {
+  color: #999;
+  font-size: 0.75em;
+}
+
+.post-comment .comment-item {
+  margin-top: 1em;
+}
+
+.post-comment .comment-item:first-child {
+  margin-top: 0;
+}
+
+.post-comment .comment-item {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.post-comment .comment-item img {
+  width: 23%;
+  height: auto;
+  border-radius: 50%;
+  float: left;
+}
+
+.post-comment .comment-item > div {
+  width: 70%;
+  margin-left: 7%;
+  float: left;
+}
+
+.post-comment .comment-item > div p {
+  color: #eee;
+  font-size: 0.8em;
+  margin: 0 0 5px;
+}
+
+.post-comment .comment-item > div p span.author {
+  color: #e92159;
+}
+
+.post-comment .comment-item > div h5 {
+  color: #ffb320;
+  font-size: 0.8em;
+  margin-top: 0px;
+}
+/* end post comments section */
+
+/*start footer styles */
+
+/*end footer styles */
